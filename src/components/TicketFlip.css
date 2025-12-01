@@ -137,3 +137,10 @@ grid-template-rows: repeat(2, 1fr);
   margin: 10px auto 0;
   display: block;
 }
+@media (max-width: 768px) {
+  .ticket-flex-container {
+    flex-direction: column;
+    margin-bottom: 8rem;
+  }
+  
+}

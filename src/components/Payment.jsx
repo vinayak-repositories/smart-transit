@@ -1,7 +1,7 @@
 import React from 'react'
 import CreditCard from "./CreditCard"
 import { Highlighter } from './highlighter';
-
+import './Payment.css';
 
 const Payment = () => {
 const cards = [
@@ -67,7 +67,7 @@ React.useEffect(() => {
 return (
     <div style={{ display: "flex", minHeight: "100vh", background: "#e63946" }}>
         {/* Left Section */}
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingRight: 48 }}>
+        <div className='flexingfixpay' style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingRight: 48 }}>
             <h1 style={{ fontWeight: "bold", fontSize: "4rem", marginBottom: 24, color: "#fff", textAlign: "center", width: "100%" }}>
                 Payment Methods
             </h1>
@@ -78,7 +78,7 @@ return (
             </div>
         </div>
         {/* Right Section */}
-        <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "flex-start", position: "relative", minHeight: 500 }}>
+        <div className='rightsectioncards' style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "flex-start", position: "relative", minHeight: 500 }}>
             {/* Stacked Cards */}
             <div style={{ position: "relative", width: 340, height: 420 }}>
                 {cards.map((card, index) => (

@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+    .rightsectioncards {
+        display: none !important;
+    }
+    .flexingfixpay{
+        padding-right: 0 !important;
+    }
+}
